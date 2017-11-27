@@ -3,6 +3,8 @@
     package="com.a.firebaseapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -24,20 +26,19 @@
         <activity android:name=".Retrieve_Multipledata_listview" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
+            android:label="@string/title_activity_login"></activity>
+        <activity android:name=".Login2ndPage" />
+        <activity android:name=".GoogleSignIn" />
+        <activity android:name=".Storage_Picture">
 
+
+        </activity>
+        <activity android:name=".Storage_Capture_Picture">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
-        </activity>
-        <activity android:name=".Login2ndPage" />
-        <activity android:name=".GoogleSignIn">
-
-
         </activity>
     </application>
 
